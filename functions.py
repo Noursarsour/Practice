@@ -12,7 +12,6 @@ def loop_to_ten():
         sum = sum + 1
 loop_to_ten()
 
-
 def calculate_total_bill(bill, tip_per):
     """Given a bill and a tip percentage, return total amount owed."""
 
@@ -26,4 +25,5 @@ print(my_total, "$")
 def add(num1, num2):
     """Add two numbers"""
     return num1+ num2
-add(1,2)
+total= add(1,2)
+print(total)
