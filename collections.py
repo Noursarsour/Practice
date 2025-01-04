@@ -25,3 +25,42 @@ letters= list('happy')
 print(letters)
 letters_set = set('happy')
 print(letters_set)
+
+#
+#int()
+#float()
+#type()
+#str()
+
+#list of tuples
+animals = [('Instance', 'gray', 2), ('Ram', 'green', 2), ('Unicode', 'blue', 2)]
+print(animals[1])
+print(animals[0][1])
+print(animals)
+
+#Comprehensions
+words = ['awesome', 'alex', 'orange', 'ant', 'deadly']
+upper_words =[]
+for word in words:
+    upper_words.append(word.upper())
+print(upper_words)
+upper_words_comprehension = [word.upper() for word in words]
+
+a_words = []
+for word in words:
+    if word.startswith('a'):
+        a_words.append(word)
+a_word_comprehension = [word for word in words if word.startswith('a')]
+
+#[word.upper() for word in words if word.startswith('a')]
+#[expression for item in list if condition]
+#[expression for item in list if condition]
+US_STATES_POPULATIONS =[]
+big_states = set()
+for population in US_STATES_POPULATIONS:
+    if population > 1000000:
+        big_states.add(population)
+
+big_states = {population
+              for population in US_STATES_POPULATIONS
+              if population > 1000000}
