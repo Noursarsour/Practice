@@ -39,3 +39,21 @@ print(f"Key: {key}, Value: {val}")
 # Clear all items from the dictionary
 d.clear()
 print(d)
+
+my_dict = {
+    "name": "Jojo",
+    "age": 32,
+    "city": "Los Angelos"
+}
+
+# Looping through keys
+for key in my_dict:
+    print(key)
+
+# Looping through values
+for value in my_dict.values():
+    print(value)
+
+# Looping through key-value pairs
+for key, value in my_dict.items():
+    print(key, ":", value)
